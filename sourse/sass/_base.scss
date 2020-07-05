@@ -280,19 +280,17 @@ input::-webkit-inner-spin-button {
 	// margin-bottom: 0;
 	background-image: none;
 	margin: 0;
-	@include a-cent(y);
-
-	&-next {
-		// background-image: url(../img/arr-right.png);
-		right: 0;
-	}
-
+	@include a-cent(y); 
+	@include media-breakpoint-up(lg) {
+		--pos: 0;
+	} 
+	--pos: -15px; 
+	&-next { 
+		right: var(--pos);
+	} 
 	&-prev {
-		left: 0;
-		// background-image: url(../img/arr-left.png);
-
-	}
-
+		left: var(--pos); 
+	} 
 }
 
 .swiper-pagination {

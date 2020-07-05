@@ -5,19 +5,18 @@ $output-bourbon-deprecation-warnings: false;
 
 @import "mixin";
 @import "fonts";
-@import "./public/img/svg/_sprite";
+@import "_sprite";
 // @import "bootstrap-theme/bootstrap";
 
 // Option B: Include parts of Bootstrap
 
 
-@import "vars";
 @import "./node_modules/bootstrap/scss/vendor/rfs";
 @import "./node_modules/bootstrap/scss/functions";
+@import "vars";
 @import "./node_modules/bootstrap/scss/variables";
 @import "./node_modules/bootstrap/scss/mixins";
 
-@import "root";
 // $theme-colors: map-remove($theme-colors, "info", "light", "dark",'warning');
 @import "./node_modules/bootstrap/scss/root";
 @import "./node_modules/bootstrap/scss/reboot";
